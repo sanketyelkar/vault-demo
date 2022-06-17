@@ -1,4 +1,4 @@
-package com.example.vault.dao;
+package com.example.vault.dto;
 
 import java.util.Objects;
 public class Credentials {

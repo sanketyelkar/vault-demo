@@ -1,6 +1,6 @@
 package com.example.vault;
 
-import com.example.vault.dao.Credentials;
+import com.example.vault.dto.Credentials;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.vault.core.VaultTemplate;
 import org.springframework.vault.support.VaultResponse;
