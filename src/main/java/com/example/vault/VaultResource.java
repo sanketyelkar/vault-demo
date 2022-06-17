@@ -18,9 +18,9 @@ public class VaultResource {
     public String demo() throws URISyntaxException {
 
         VaultResponse response =
-                vaultTemplate.write("cubbyhole/demo", new Credentials("sajdsf123", "asdqwe"));
+                vaultTemplate.write("cubbyhole/googlefit", new Credentials("sajdsf123", "asdqwe"));
 
-        VaultResponseSupport<Credentials> resp = vaultTemplate.read("cubbyhole/demo", Credentials.class);
+        VaultResponseSupport<Credentials> resp = vaultTemplate.read("cubbyhole/googlefit", Credentials.class);
 
         String username="";
         String password="";
