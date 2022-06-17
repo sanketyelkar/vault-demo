@@ -27,10 +27,6 @@ public class VaultResource {
         VaultResponse response =
                 vaultTemplate.write("cubbyhole/googlefit", new Credentials(credentials.getClientId(), credentials.getClientSecret()));
 
-        if (response == null) {
-            return "Unsuccess";
-        }
-
         return "Success";
 
     }
