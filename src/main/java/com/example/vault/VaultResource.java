@@ -11,11 +11,16 @@ import java.net.URISyntaxException;
 
 @RestController
 public class VaultResource {
+
+//    @Autowired
+//    VaultConfiguration vaultConfiguration;
+
     @Autowired
     VaultTemplate vaultTemplate;
 
     @GetMapping("/demo")
     public String demo() throws URISyntaxException {
+//        VaultTemplate vaultTemplate = vaultConfiguration.vaultTemplate();
 
         VaultResponse response =
                 vaultTemplate.write("cubbyhole/googlefit", new Credentials("sajdsf123", "asdqwe"));
